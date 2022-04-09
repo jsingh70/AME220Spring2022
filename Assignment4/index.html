@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Title of Webpage -->
+    <title> Jag's Resume</title>
+    <!-- Attaching Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Table SetUp -->
+</head>
+
+<body>
+    <div class="content">
+        <!-- Image of thumbnail along with the hyperlink of image that takes you to image website -->
+        <center>
+            <a href="">
+                <img src='https://cdna.artstation.com/p/assets/images/images/020/778/078/medium/amar-pratap-singh-logo-final.jpg?1569148347'>
+            </a>
+
+            <!-- Name in Heading1-->
+            <h1>Jagjyot Singh</h1>
+
+            <!-- Address with link that takes you to Google Maps -->
+            <a href='https://goo.gl/maps/Xg8wZjFtf1ydPqkC9'>
+                <address>4404 E Peach Tree Dr<br>Chandler, AZ 85249</address>
+            </a>
+
+            <!-- Telephone number which lets you call -->
+            <a href="tel:+14807499909">
+                <phone>(480) 749-9909</phone>
+            </a>
+        </center>
+        <br>
+        <br>
+
+        <!-- Objective in Heading 2 and paragraph -->
+        <button class="accordion"> Objective </button>
+        <p>Get my Bachelor's Degree and Get a Real Job!</p>
+        <br>
+
+        <button class="accordion"> Education </button>
+        <!-- Table Set -->
+        <table style='border: 1px solid black;border-collapse: collapse'>
+            <!-- Headers -->
+            <tr>
+                <th>Education</th>
+                <th>School</th>
+                <th>Year</th>
+            </tr>
+            <!-- HighSchool Degree -->
+            <tr>
+                <td>Highschool Degree</td>
+                <td>Basha High School</td>
+                <td>2018</td>
+            </tr>
+            <!-- Bachelors Degree -->
+            <tr>
+                <td>Bachelor's Degree</td>
+                <td>Arizona State University</td>
+                <td>2022</td>
+            </tr>
+        </table>
+        <br>
+
+        <!-- Experince in Heading 2 and Order list -->
+        <button class="accordion"> Experience </button>
+        <ol>
+            <!-- Bowlero -->
+            <li>
+                <strong>Bowlero</strong>
+                <br>
+                &ensp;Serve and Bartend for customers at a rapid pace, while maintaining a friendly attitude.
+
+            </li>
+
+            <!-- Rawhide -->
+            <li>
+                <strong>Rawhide</strong>
+                <br>
+                &ensp;Bartend at concerts and raves, keeping a happy and professional setting while making drinks.
+            </li>
+
+            <!-- FlipSide -->
+            <li>
+                <strong>FlipSide</strong>
+                <br>
+                &ensp;Serve and Bartend, clean tables, run food, open/close center.
+            </li>
+        </ol>
+
+        <!-- References in Heading 2, and an Unordered list -->
+        <button class="accordion"> References </button>
+        <ul>
+            <li>Dawn Norftill</li>
+            <li>Nikolas Manuel</li>
+            <li> Jacob Gerbich</li>
+        </ul>
+
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
